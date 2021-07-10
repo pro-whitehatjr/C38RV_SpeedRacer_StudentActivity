@@ -59,13 +59,13 @@ class Game {
         cars[index - 1].position.y = y;
       }
 
-      this.handlePlayerControl();
+      this.handlePlayerControls();
 
       drawSprites();
     }
   }
 
-  handlePlayerControl() {
+  handlePlayerControls() {
     // handling keyboard events
     if (keyIsDown(UP_ARROW)) {
       player.positionY += 10;
